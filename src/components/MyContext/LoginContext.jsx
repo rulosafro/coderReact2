@@ -1,0 +1,1 @@
+Hola a todos, vengo con otra duda. Alguno usando el react-route-dom ha creado links en el app y les rebota sugiriendo si se refieren a la misma ruta que hicieron pero sumando el nombre del repositorio entre medio. Por ejemplo estoy en /busqueda/:id y despues me dice, te refieres a /repositorio/busqueda/:id
