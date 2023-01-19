@@ -6,7 +6,7 @@ const init = JSON.parse(localStorage.getItem('cart')) || []
 
 export const MyCartProvider = ({children}) => {
     const [cart, setCart] = useState(init)
-    console.log(cart)
+    // console.log(cart)
 
     const agregarAlCarrito = (item) => {
         setCart([...cart, item])

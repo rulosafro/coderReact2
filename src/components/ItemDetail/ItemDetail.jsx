@@ -51,7 +51,7 @@ const ItemDetail = ({id, name, stock, category, image, description, price }) => 
           onAdd={handleAgregar}
           max={stock}
           /> 
-        : <Link to='/coderReact/cart'>Terminar mi compra</Link>
+        : <Link to='/cart'>Terminar mi compra</Link>
       }
       <br />
 

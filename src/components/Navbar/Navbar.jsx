@@ -2,6 +2,7 @@ import './Navbar.sass'
 import CustomizedBadges from "../CartWidget/CartWidget.jsx";
 import { Link } from 'react-router-dom';
 import { CartWidget2 } from '../CartWidget2/CartWidget2';
+import Button from '@mui/material/Button'
 
 export const Navbar = () => {
 // {bg = ""}
@@ -11,7 +12,7 @@ export const Navbar = () => {
             <div></div>
             <div></div>
             <nav>
-                <Link to="/coderReact/what">What</Link>
+                <Link to="/what">What</Link>
                 <Link to="/we">We</Link>
                 <Link to="/do">Do</Link>
                 <Link to="/Formulario">Form</Link>
