@@ -33,7 +33,15 @@ export const LoginProvider = ({children}) => {
   const login = (values) => { 
     const match = MOCK_USERS.find(user => user.email === values.email && user.password === values.password)
 
-    if (match) {
+    if (!match) {
+        setUser({
+            email: null,
+            logged: false,
+            error: "Los datos son inválidos"
+        })
+    }
+
+    if (match.password === values.password) {
         setUser({
             email: match.email,
             logged: true,
@@ -43,7 +51,7 @@ export const LoginProvider = ({children}) => {
         setUser({
             email: null,
             logged: false,
-            error: "Los datos son inválidos"
+            error: "Contraseña incorrecta"
         })
     }
    }
