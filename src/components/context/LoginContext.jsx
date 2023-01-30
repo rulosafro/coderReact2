@@ -23,9 +23,10 @@ export const useLoginContext = () => {
 
 export const LoginProvider = ({children}) => {
   const [user, setUser] = useState({
-    email: null,
-    logged: false,
+    email: "a@a.com",
+    logged: true,
     error: null
+    // arreglar
   })
 
   console.log(user);
