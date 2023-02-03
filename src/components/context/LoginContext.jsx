@@ -1,19 +1,6 @@
-import { useState, createContext, useContext } from 'react'
-
-const MOCK_USERS = [
-    {
-        email: 'a@a.com',
-        password: 'Clavea'
-    },
-    {
-        email: 'b@b.com',
-        password: 'Claveb'
-    },
-    {
-        email: 'c@c.com',
-        password: 'Clavec'
-    }
-]
+import { useState, createContext, useContext, useEffect } from 'react'
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut, signInWithPopup } from 'firebase/auth'
+import { auth, provider } from '../../firebase/config'
 
 export const LoginContext = createContext()
 
@@ -22,51 +9,96 @@ export const useLoginContext = () => {
  }
 
 export const LoginProvider = ({children}) => {
+  const [loading, setLoading] = useState(false)
   const [user, setUser] = useState({
-    email: "a@a.com",
-    logged: true,
+    email: null,
+    logged: false,
     error: null
-    // arreglar
   })
 
-  console.log(user);
+  const googleLogin = () => { 
+    signInWithPopup(auth, provider)
+        .catch((error) => { 
+            setUser({
+                email: null,
+                logged: false,
+                error: error.message
+            })
+        })
+   }
 
   const login = (values) => { 
-    const match = MOCK_USERS.find(user => user.email === values.email && user.password === values.password)
+    setLoading(true)
 
-    if (!match) {
-        setUser({
-            email: null,
-            logged: false,
-            error: "Los datos son inválidos"
-        })
-    }
+    signInWithEmailAndPassword(auth, values.email, values.password)
+        // .then((userCredential) => { 
+        //     setUser({
+        //         email: userCredential.user.email,
+        //         logged: true,
+        //         error: null
+        //     })
+        // })
+        .catch((error) => { 
+            console.log(error)
+            setUser({
+                email: null,
+                logged: false,
+                error: error.message
+            })
+         })
+        .finally(() => setLoading(false))
 
-    if (match.password === values.password) {
-        setUser({
-            email: match.email,
-            logged: true,
-            error: null
-        })
-    } else {
-        setUser({
-            email: null,
-            logged: false,
-            error: "Contraseña incorrecta"
-        })
-    }
-   }
-    
+  }
+
+        
     const logout = () => { 
-        setUser({
-            email: null,
-            logged: false,
-            error: null
-        })
+        signOut(auth)
+            .then(() => {
+                setUser({
+                    email: null,
+                    logged: false,
+                    error: null
+                })
+            })
     }
+
+    const register = (values) => { 
+        setLoading(true)
+        createUserWithEmailAndPassword(auth, values.email, values.password)
+        // .then((userCredential) => { 
+        //     setUser({
+        //         email: userCredential.user.email,
+        //         logged: true,
+        //         error: null
+        //     })
+        // })
+        .catch((error) => { 
+            console.log(error)
+            setUser({
+                email: null,
+                logged: false,
+                error: error.message
+            })
+        })
+        .finally(() => setLoading(false))
+     }
+
+    useEffect(() => { 
+        onAuthStateChanged(auth, (user) => { 
+            if (user) {
+                setUser({
+                    email: user.email,
+                    logged: true, 
+                    error: null
+                })
+            } else {
+                logout()
+            }
+         })
+    }, [])
 
   return (
-    <LoginContext.Provider value={{user, login, logout}}>
+    <LoginContext.Provider value={{user, login, logout, loading, register, googleLogin}}>
         {children}
     </LoginContext.Provider>
   )

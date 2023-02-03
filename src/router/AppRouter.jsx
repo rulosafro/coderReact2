@@ -11,11 +11,13 @@ import { Portfolio } from '../components/Portfolio/Portfolio'
 import { Formulario } from '../components/Formulario/Formulario'
 import { Cart } from '../components/Cart/Cart'
 import { Login } from '../components/Login/Login'
+import { RegisterScreen } from '../components/RegisterScreen/RegisterScreen'
 import { useLoginContext } from '../components/context/LoginContext.jsx'
 
 export const AppRouter = () => {
 
   const {user} = useLoginContext()
+  
   return (
     <BrowserRouter>
           {user.logged
@@ -38,7 +40,8 @@ export const AppRouter = () => {
               </>
             : <Routes>
                   <Route path='/login' element={ <Login/>}/>
-                    <Route path='*' element={ <Navigate to={"/login"}/>} />
+                  <Route path='/register' element={ <RegisterScreen/>}/>
+                  <Route path='*' element={ <Navigate to={"/login"}/>} />
               </Routes>
           }
       
