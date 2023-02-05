@@ -13,6 +13,7 @@ import { Cart } from '../components/Cart/Cart'
 import { Login } from '../components/Login/Login'
 import { RegisterScreen } from '../components/RegisterScreen/RegisterScreen'
 import { useLoginContext } from '../components/context/LoginContext.jsx'
+import { Checkout } from '../components/Checkout/Checkout.jsx'
 
 export const AppRouter = () => {
 
@@ -33,8 +34,9 @@ export const AppRouter = () => {
                   <Route path='/busqueda/:busqueda' element={<ItemListContainer/>}/>
                   <Route path='/productos/:categoryId' element={<ItemListContainer/>}/>
                   <Route path='/detail/:itemId' element={<ItemDetailContainer/>}/>
+                  <Route path='/checkout' element={<Checkout/>}/>
                   <Route path='/error404' element={ <Error404/>}/>
-                  <Route path='*' element={ <Navigate to={"/error404"}/>} />
+                  <Route path='*' element={ <Navigate to={"/"}/>} />
                 </Routes>
                 <Footer/>
               </>
