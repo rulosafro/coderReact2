@@ -2,7 +2,6 @@ import { Navigate, useNavigate } from "react-router"
 import { Link } from "react-router-dom"
 import { ItemCount } from "../ItemCount/ItemCount"
 import { useContext, useState } from "react"
-import { Opciones } from "../Opciones/Opciones"
 import { MyCartContext } from "../context/MyCartContext"
 
 const opciones = [
@@ -55,12 +54,6 @@ const ItemDetail = ({id, name, stock, category, image, description, price }) => 
       }
       <br />
 
-      <Opciones
-        options={opciones}
-        set={setOpcion}
-        id={id}
-        />
-      <br/> 
       <br/> 
 
       <button onClick={handleVolver}>Volver</button>

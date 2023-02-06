@@ -3,11 +3,11 @@ import { MyCartContext } from '../context/MyCartContext'
 import "./Checkout.sass"
 import { addDoc, collection, documentId, getDocs, query, where, writeBatch } from 'firebase/firestore'
 import {db} from "../../firebase/config"
-import { Await } from 'react-router-dom'
+import { Await, Link, Navigate } from 'react-router-dom'
 
 export const Checkout = () => {
     const {cart, totalCart, emptyCart} = useContext(MyCartContext)
-    const [orderId, setOrderId] = useState()
+    const [orderId, setOrderId] = useState(null)
     const [values, setValues] = useState({
         nombre:'',
         direccion:'',
@@ -21,7 +21,7 @@ export const Checkout = () => {
         })
      }
     
-    const handleSubmit = (e) => { 
+    const handleSubmit = async (e) => { 
         e.preventDefault()
 
         //Validación
@@ -50,7 +50,7 @@ export const Checkout = () => {
         const productosRef = collection(db, 'productos')
         const outOfStock = []
 
-        const itemsRef = query( productosRef, where(documentId(), 'in', cart.map(prod => prod.id)))
+        const itemsRef = query(productosRef, where(documentId(), 'in', cart.map(prod => prod.id)))
 
         const productos = await getDocs(itemsRef)
 
@@ -65,7 +65,7 @@ export const Checkout = () => {
             }
         })
 
-        if (outOfStock,length === 0) {
+        if (outOfStock.length === 0) {
             batch.commit()
                 .then(() => { 
                     addDoc(ordersRef, orden)
@@ -74,13 +74,27 @@ export const Checkout = () => {
                             emptyCart()
                          })  
                         .catch((error) => { console.log(error) })
-                 })
+                })
         } else {
             alert("Hay items sin stock")
         }
+    }
 
-        //! Cambiar el Alert
+    //! Cambiar el Alert
 
+    if (orderId) {
+        return (
+            <div>
+                <h2>Tu compra ha sido exitosa</h2>
+                <p>El código de tu orden es: {orderId}</p>
+
+                <Link to='/'>Volver</Link>
+            </div>
+        )
+    }
+
+    if (cart.length === 0) {
+        return <Navigate to='/'/>
     }
 
     return (
