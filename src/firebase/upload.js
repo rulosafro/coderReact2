@@ -8,4 +8,5 @@ const productosRef = collection(db, 'productos')
 
 MOCK.forEach (item => { 
     addDoc(productosRef, item)
- })
+})
+

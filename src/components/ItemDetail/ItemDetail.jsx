@@ -4,13 +4,6 @@ import { ItemCount } from "../ItemCount/ItemCount"
 import { useContext, useState } from "react"
 import { MyCartContext } from "../context/MyCartContext"
 
-const opciones = [
-  {value:"1", text: "opción 1"},
-  {value:"2", text: "opción 2"},
-  {value:"3", text: "opción 3"},
-  {value:"4", text: "opción 4"}
-]
-
 const ItemDetail = ({id, name, stock, category, image, description, price }) => {
   const [cantidad, setCantidad] = useState(1)
   const [opcion, setOpcion] = useState()
@@ -53,8 +46,6 @@ const ItemDetail = ({id, name, stock, category, image, description, price }) => 
         : <Link to='/cart'>Terminar mi compra</Link>
       }
       <br />
-
-      <br/> 
 
       <button onClick={handleVolver}>Volver</button>
 

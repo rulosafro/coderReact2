@@ -34,6 +34,7 @@ export const ItemListContainer = () => {
  
   return (
     <div className='container mx-auto px-4'>
+
         <Filtros/>
         <ItemList productos={productos}/>
     </div>

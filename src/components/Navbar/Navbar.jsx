@@ -1,7 +1,6 @@
 import './Navbar.sass'
 import { Link } from 'react-router-dom';
 import { CartWidget2 } from '../CartWidget2/CartWidget2';
-import Button from '@mui/material/Button'
 import { useLoginContext } from '../context/LoginContext';
 
 export const Navbar = () => {
@@ -9,18 +8,17 @@ export const Navbar = () => {
     const {user, logout} = useLoginContext()
 
     return (
-        <header className='flex flex-col'>
-            <div className='flex flex-row justify-between space-x-80'>
-                <Link to="/" className='navBarRam__Logo'><h1 className='navBarRam__Logo'>RulosAfro Studio</h1></Link>
-                <div></div>
-                <div></div>
-                <nav>
+        <header className='items-center bg-primary text-ramaWhite justify-around h-auto py-1'>
+            <div className='flex flex-wrap justify-center lg:justify-between my-2'>
+                <Link to="/" className='text-ramaBlack text-4xl font-extrabold lg:basis-9/10 px-4'>YeezyMarketX</Link>
+                <nav className=' text-center px-6 lg:basis-1/10'>
                     <Link to="/what">What</Link>
                     <Link to="/we">We</Link>
                     <Link to="/do">Do</Link>
-                    <Link to="/Formulario">Form</Link>
                     <span>|</span>
                     <Link to="/idealab">IdeaLab</Link>
+                    <span>|</span>
+                    <Link to="/Formulario">Form</Link>
                     <span>|</span>
                     <CartWidget2/>
                 </nav>
@@ -29,10 +27,6 @@ export const Navbar = () => {
                 <p className='text-black'>Bienvenido: {user.email}</p>
                 <button className='text-black rounded-full' onClick={logout}> Logout </button>
             </div>
-
         </header>
     )
 }
-
-
-{/* <CustomizedBadges/> */}

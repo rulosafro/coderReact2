@@ -1,4 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base {
+    body {
+        /* background-color: #222;
+        color: white; */
+        @apply text-ramaWhite bg-ramaBlack font-['Raleway'];
+        font-family: 'Raleway', sans-serif;
+    }
+    h1 {
+        @apply text-5xl
+    }
+}
+
+@layer components {
+    .ramButton {
+        @apply text-lg;
+    }
+}
