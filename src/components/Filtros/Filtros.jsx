@@ -6,7 +6,7 @@ export const Filtros = () => {
   return (
     <div className='filtrosRow flex flew-row mt-2'>
 
-      <h4 className='text-lg text-bold'>Filtros</h4>
+      {/* <h4 className='text-lg text-bold'>Filtros</h4> */}
       <ul>
         <li><Link className="filterLink" to="/"> All</Link></li>
         <li><Link className="filterLink" to="/productos/Beluga">Beluga</Link></li>
