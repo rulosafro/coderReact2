@@ -12,12 +12,12 @@ export const ItemCount = ({cantidad, setCantidad, max, onAdd}) => {
   }
 
   return (
-    <div>
-      <button onClick={handleRestar}>-</button> <br />
-      <span>{cantidad}</span> <br />
-      <button className='bg-green-500 botonRam' onClick={handleSumar}>+</button>
+    <div className='flex flex-row gap-4 items-center align-center ml-3'>
+      <button className='ramButton font-bold' onClick={handleRestar}>-</button> <br />
+      <span className='text-xl font-bold '>{cantidad}</span> <br />
+      <button className='ramButton font-bold' onClick={handleSumar}>+</button>
 
-      <button onClick={onAdd}>Agregar al Carrito</button>
+      <button onClick={onAdd} className='font-bold bg-green-500 ramButton'>Agregar al Carrito</button>
     </div>
   )
 }

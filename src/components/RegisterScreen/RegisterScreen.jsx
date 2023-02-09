@@ -27,8 +27,8 @@ export const RegisterScreen = () => {
 
     
   return (
-    <div className='container mx-auto px-4 '>
-        <h2 className='text-9xl font-bold my-2 bg-yellow-400 pl-2'>Login</h2>
+    <div className='block max-w-sm p-6 rounded-lg shadow bg-gray-800 border-gray-700 hover:bg-gray-700 place-content-center mx-auto'>
+        <h2 className='text-9xl font-bold my-2 bg-yellow-400 pl-2 text-white'>Registrarme</h2>
         <hr className='mb-4' />
         <form action="" onSubmit={handleSubmit}>
             <input className='rounded-lg text-lg' type="email" value={values.email} onChange={handleInputChange} name='email' placeholder='Email'/> <br /> <br />
@@ -36,7 +36,7 @@ export const RegisterScreen = () => {
             <button className='bg-violet-500 rounded-full p-2 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300'>Registrarme</button>
             {user.error && <p className='text-red-900'> {user.error}</p>}
         </form>
-        <Link to="/login">Ya estoy registrado</Link>
+        <Link to="/login" className='my-2'>Ya estoy registrado</Link>
     </div>
   )
 }

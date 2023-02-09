@@ -21,32 +21,24 @@ export const AppRouter = () => {
   
   return (
     <BrowserRouter>
-          {user.logged
-            ? <>
-              <Navbar/>
-                <Routes>
-                  <Route path='/' element={<ItemListContainer/>}/>
-                  <Route path='/what' element={<Mision/>}/>
-                  <Route path='/we' element={<Nosotros/>}/>
-                  <Route path='/do' element={<Portfolio/>}/>
-                  <Route path='/cart' element={<Cart/>}/>
-                  <Route path='/formulario' element={<Formulario/>}/>
-                  <Route path='/busqueda/:busqueda' element={<ItemListContainer/>}/>
-                  <Route path='/productos/:categoryId' element={<ItemListContainer/>}/>
-                  <Route path='/detail/:itemId' element={<ItemDetailContainer/>}/>
-                  <Route path='/checkout' element={<Checkout/>}/>
-                  <Route path='/error404' element={ <Error404/>}/>
-                  <Route path='*' element={ <Navigate to={"/"}/>} />
-                </Routes>
-                <Footer/>
-              </>
-            : <Routes>
-                  <Route path='/login' element={ <Login/>}/>
-                  <Route path='/register' element={ <RegisterScreen/>}/>
-                  <Route path='*' element={ <Navigate to={"/login"}/>} />
-              </Routes>
-          }
-      
-        </BrowserRouter>
+      <Navbar/>
+        <Routes>
+          <Route path='/' element={<ItemListContainer/>}/>
+          <Route path='/what' element={<Mision/>}/>
+          <Route path='/we' element={<Nosotros/>}/>
+          <Route path='/do' element={<Portfolio/>}/>
+          <Route path='/cart' element={<Cart/>}/>
+          <Route path='/formulario' element={<Formulario/>}/>
+          <Route path='/busqueda/:busqueda' element={<ItemListContainer/>}/>
+          <Route path='/productos/:categoryId' element={<ItemListContainer/>}/>
+          <Route path='/detail/:itemId' element={<ItemDetailContainer/>}/>
+          <Route path='/checkout' element={<Checkout/>}/>
+          <Route path='/error404' element={ <Error404/>}/>
+          <Route path='/login' element={ <Login/>}/>
+          <Route path='/register' element={ <RegisterScreen/>}/>
+          <Route path='*' element={ <Navigate to={"/"}/>} />
+        </Routes>
+        <Footer/>
+    </BrowserRouter>
   )
 }

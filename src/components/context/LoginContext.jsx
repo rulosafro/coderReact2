@@ -31,13 +31,6 @@ export const LoginProvider = ({children}) => {
     setLoading(true)
 
     signInWithEmailAndPassword(auth, values.email, values.password)
-        // .then((userCredential) => { 
-        //     setUser({
-        //         email: userCredential.user.email,
-        //         logged: true,
-        //         error: null
-        //     })
-        // })
         .catch((error) => { 
             console.log(error)
             setUser({
@@ -49,8 +42,7 @@ export const LoginProvider = ({children}) => {
         .finally(() => setLoading(false))
 
   }
-
-        
+    
     const logout = () => { 
         signOut(auth)
             .then(() => {
@@ -65,13 +57,6 @@ export const LoginProvider = ({children}) => {
     const register = (values) => { 
         setLoading(true)
         createUserWithEmailAndPassword(auth, values.email, values.password)
-        // .then((userCredential) => { 
-        //     setUser({
-        //         email: userCredential.user.email,
-        //         logged: true,
-        //         error: null
-        //     })
-        // })
         .catch((error) => { 
             console.log(error)
             setUser({

@@ -21,12 +21,21 @@ export const Navbar = () => {
                     <Link to="/Formulario">Form</Link>
                     <span>|</span>
                     <CartWidget2/>
+
+                    <div className='p-2 ml-2 text-white rounded-xl
+                    bg-gradient-to-r from-gray-400 to-gray-600  hover:from-pink-500 hover:to-yellow-500 focus:outline-none focus:ring focus:ring-violet-300'>
+                        {
+                            user.logged
+                            ? <Link className='text-white border-xl' onClick={logout}> Logout </Link>
+                            : <Link to="/login" className='text-white border-xl' onClick={logout}>Login</Link>
+                            
+                        }
+                    </div>
                 </nav>
             </div>
-            <div className='flex justify-items-end space-x-80 mb-2 '>
+            {/* <div className='flex justify-items-end space-x-80 mb-2 '>
                 <p className='text-black'>Bienvenido: {user.email}</p>
-                <button className='text-black rounded-full' onClick={logout}> Logout </button>
-            </div>
+            </div> */}
         </header>
     )
 }

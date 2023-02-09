@@ -26,7 +26,7 @@ const ItemDetail = ({id, name, stock, category, image, description, price }) => 
 
   return (
     <div>
-      <img src={image} alt={name} />
+      <img src={image} alt={name}className="py-4" />
       <h2 className="">{name}</h2>
       <br />
       <small>{category} - {id}</small>
@@ -43,7 +43,7 @@ const ItemDetail = ({id, name, stock, category, image, description, price }) => 
           onAdd={handleAgregar}
           max={stock}
           /> 
-        : <Link to='/cart'>Terminar mi compra</Link>
+        : <Link to='/cart' className="ramButton bg-primary text-black font-bold">Terminar mi compra</Link>
       }
       <br />
 

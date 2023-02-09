@@ -4,10 +4,9 @@ import './Filtros.sass'
 
 export const Filtros = () => {
   return (
-    <div className='filtrosRow flex flew-row mt-2'>
+    <div className='filtrosRow mt-3 justify-center'>
 
-      {/* <h4 className='text-lg text-bold'>Filtros</h4> */}
-      <ul>
+      <ul className='flex flex-wrap justify-center '>
         <li><Link className="filterLink" to="/"> All</Link></li>
         <li><Link className="filterLink" to="/productos/Beluga">Beluga</Link></li>
         <li><Link className="filterLink" to="/productos/B.Cooper">B.Cooper</Link></li>

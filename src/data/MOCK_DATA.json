@@ -8,7 +8,8 @@
     "price": 1097,
     "category": "Beluga",
     "stock": 44,
-    "image": "../src/img/350-Low-V2-Beluga.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-Low-V2-Beluga.webp?alt=media&token=240099ca-54b2-4df7-89ac-25dc8ee66cce",
+    "url": "../src/img/350-Low-V2-Beluga.webp"
   },
   {
     "code": 2,
@@ -19,7 +20,8 @@
     "price": 685,
     "category": "B.Cooper",
     "stock": 81,
-    "image": "../src/img/350-V2-Core-Black-Copper.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-Copper.webp?alt=media&token=28b44a31-fd84-41e7-860b-642ab26207bd",
+    "url": "../src/img/350-V2-Core-Black-Copper.webp"
   },
   {
     "code": 3,
@@ -30,7 +32,8 @@
     "price": 690,
     "category": "B.Green",
     "stock": 19,
-    "image": "../src/img/350-V2-Core-Black-Green.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-Green.webp?alt=media&token=82168cbf-7944-4d08-829b-5c884e1e2273",
+    "url": "../src/img/350-V2-Core-Black-Green.webp"
   },
   {
     "code": 4,
@@ -41,7 +44,8 @@
     "price": 1075,
     "category": "B.Red",
     "stock": 48,
-    "image": "../src/img/350-V2-Core-Black-Red.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-Red.webp?alt=media&token=b7a9aa2d-da0e-4f4f-8151-22f47d5dc68a",
+    "url": "../src/img/350-V2-Core-Black-Red.webp"
   },
   {
     "code": 5,
@@ -52,7 +56,8 @@
     "price": 828,
     "category": "B.Red",
     "stock": 14,
-    "image": "../src/img/350-V2-Core-Black-Red-2017.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-Red-2017.webp?alt=media&token=a200f6f5-1a0d-4a87-8e8b-971f522d82e3",
+    "url": "../src/img/350-V2-Core-Black-Red-2017.webp"
   },
   {
     "code": 6,
@@ -63,7 +68,8 @@
     "price": 784,
     "category": "B.White",
     "stock": 58,
-    "image": "../src/img/350-V2-Core-Black-White.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-White.webp?alt=media&token=1be299ce-79de-411a-85e4-ccdcb063789d",
+    "url": "../src/img/350-V2-Core-Black-White.webp"
   },
   {
     "code": 7,
@@ -74,7 +80,8 @@
     "price": 460,
     "category": "C.White",
     "stock": 46,
-    "image": "../src/img/350-V2-Cream-White.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Cream-White.webp?alt=media&token=6cb9cab1-2e81-4746-be44-e5e90ef04574",
+    "url": "../src/img/350-V2-Cream-White.webp"
   },
   {
     "code": 8,
@@ -85,7 +92,8 @@
     "price": 570,
     "category": "Zebra",
     "stock": 54,
-    "image": "../src/img/350-V2-Zebra.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Zebra.webp?alt=media&token=d4d20b4f-be46-4429-bc3c-a6a19b76d604",
+    "url": "../src/img/350-V2-Zebra.webp"
   },
   {
     "code": 9,
@@ -96,7 +104,8 @@
     "price": 850,
     "category": "Beluga",
     "stock": 88,
-    "image": "../src/img/350-Low-V2-Beluga.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-Low-V2-Beluga.webp?alt=media&token=240099ca-54b2-4df7-89ac-25dc8ee66cce",
+    "url": "../src/img/350-Low-V2-Beluga.webp"
   },
   {
     "code": 10,
@@ -107,7 +116,8 @@
     "price": 999,
     "category": "B.Red",
     "stock": 44,
-    "image": "../src/img/350-V2-Core-Black-Red.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-Red.webp?alt=media&token=b7a9aa2d-da0e-4f4f-8151-22f47d5dc68a",
+    "url": "../src/img/350-V2-Core-Black-Red.webp"
   },
   {
     "code": 11,
@@ -118,7 +128,8 @@
     "price": 740,
     "category": "B.Red",
     "stock": 51,
-    "image": "../src/img/350-V2-Core-Black-Red-2017.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-Red-2017.webp?alt=media&token=a200f6f5-1a0d-4a87-8e8b-971f522d82e3",
+    "url": "../src/img/350-V2-Core-Black-Red-2017.webp"
   },
   {
     "code": 12,
@@ -129,7 +140,8 @@
     "price": 800,
     "category": "B.White",
     "stock": 99,
-    "image": "../src/img/350-V2-Core-Black-White.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-White.webp?alt=media&token=1be299ce-79de-411a-85e4-ccdcb063789d",
+    "url": "../src/img/350-V2-Core-Black-White.webp"
   },
   {
     "code": 13,
@@ -140,7 +152,8 @@
     "price": 470,
     "category": "C.White",
     "stock": 95,
-    "image": "../src/img/350-V2-Cream-White.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Cream-White.webp?alt=media&token=6cb9cab1-2e81-4746-be44-e5e90ef04574",
+    "url": "../src/img/350-V2-Cream-White.webp"
   },
   {
     "code": 14,
@@ -151,7 +164,8 @@
     "price": 580,
     "category": "Zebra",
     "stock": 90,
-    "image": "../src/img/350-V2-Zebra.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Zebra.webp?alt=media&token=d4d20b4f-be46-4429-bc3c-a6a19b76d604",
+    "url": "../src/img/350-V2-Zebra.webp"
   },
   {
     "code": 15,
@@ -162,7 +176,8 @@
     "price": 1068,
     "category": "Beluga",
     "stock": 99,
-    "image": "../src/img/350-Low-V2-Beluga.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-Low-V2-Beluga.webp?alt=media&token=240099ca-54b2-4df7-89ac-25dc8ee66cce",
+    "url": "../src/img/350-Low-V2-Beluga.webp"
   },
   {
     "code": 16,
@@ -173,7 +188,8 @@
     "price": 1095,
     "category": "B.Red",
     "stock": 2,
-    "image": "../src/img/350-V2-Core-Black-Red.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-Red.webp?alt=media&token=b7a9aa2d-da0e-4f4f-8151-22f47d5dc68a",
+    "url": "../src/img/350-V2-Core-Black-Red.webp"
   },
   {
     "code": 17,
@@ -184,7 +200,8 @@
     "price": 820,
     "category": "B.Red",
     "stock": 20,
-    "image": "../src/img/350-V2-Core-Black-Red-2017.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-Red-2017.webp?alt=media&token=a200f6f5-1a0d-4a87-8e8b-971f522d82e3",
+    "url": "../src/img/350-V2-Core-Black-Red-2017.webp"
   },
   {
     "code": 18,
@@ -195,7 +212,8 @@
     "price": 750,
     "category": "B.Red",
     "stock": 92,
-    "image": "../src/img/350-V2-Core-Black-Red-2017.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-Red-2017.webp?alt=media&token=a200f6f5-1a0d-4a87-8e8b-971f522d82e3",
+    "url": "../src/img/350-V2-Core-Black-Red-2017.webp"
   },
   {
     "code": 19,
@@ -206,7 +224,8 @@
     "price": 715,
     "category": "B.White",
     "stock": 27,
-    "image": "../src/img/350-V2-Core-Black-White.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-White.webp?alt=media&token=1be299ce-79de-411a-85e4-ccdcb063789d",
+    "url": "../src/img/350-V2-Core-Black-White.webp"
   },
   {
     "code": 20,
@@ -217,7 +236,8 @@
     "price": 870,
     "category": "B.White",
     "stock": 34,
-    "image": "../src/img/350-V2-Core-Black-White.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-White.webp?alt=media&token=1be299ce-79de-411a-85e4-ccdcb063789d",
+    "url": "../src/img/350-V2-Core-Black-White.webp"
   },
   {
     "code": 21,
@@ -228,7 +248,8 @@
     "price": 480,
     "category": "C.White",
     "stock": 50,
-    "image": "../src/img/350-V2-Cream-White.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Cream-White.webp?alt=media&token=6cb9cab1-2e81-4746-be44-e5e90ef04574",
+    "url": "../src/img/350-V2-Cream-White.webp"
   },
   {
     "code": 22,
@@ -239,7 +260,8 @@
     "price": 585,
     "category": "Zebra",
     "stock": 40,
-    "image": "../src/img/350-V2-Zebra.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Zebra.webp?alt=media&token=d4d20b4f-be46-4429-bc3c-a6a19b76d604",
+    "url": "../src/img/350-V2-Zebra.webp"
   },
   {
     "code": 23,
@@ -250,7 +272,8 @@
     "price": 595,
     "category": "Zebra",
     "stock": 53,
-    "image": "../src/img/350-V2-Zebra.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Zebra.webp?alt=media&token=d4d20b4f-be46-4429-bc3c-a6a19b76d604",
+    "url": "../src/img/350-V2-Zebra.webp"
   },
   {
     "code": 24,
@@ -261,7 +284,8 @@
     "price": 960,
     "category": "Beluga",
     "stock": 9,
-    "image": "../src/img/350-Low-V2-Beluga.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-Low-V2-Beluga.webp?alt=media&token=240099ca-54b2-4df7-89ac-25dc8ee66cce",
+    "url": "../src/img/350-Low-V2-Beluga.webp"
   },
   {
     "code": 25,
@@ -272,7 +296,8 @@
     "price": 785,
     "category": "B.Red",
     "stock": 62,
-    "image": "../src/img/350-V2-Core-Black-Red-2017.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-Red-2017.webp?alt=media&token=a200f6f5-1a0d-4a87-8e8b-971f522d82e3",
+    "url": "../src/img/350-V2-Core-Black-Red-2017.webp"
   },
   {
     "code": 26,
@@ -283,7 +308,8 @@
     "price": 799,
     "category": "B.White",
     "stock": 75,
-    "image": "../src/img/350-V2-Core-Black-White.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-White.webp?alt=media&token=1be299ce-79de-411a-85e4-ccdcb063789d",
+    "url": "../src/img/350-V2-Core-Black-White.webp"
   },
   {
     "code": 27,
@@ -294,7 +320,8 @@
     "price": 850,
     "category": "B.White",
     "stock": 78,
-    "image": "../src/img/350-V2-Core-Black-White.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-White.webp?alt=media&token=1be299ce-79de-411a-85e4-ccdcb063789d",
+    "url": "../src/img/350-V2-Core-Black-White.webp"
   },
   {
     "code": 28,
@@ -305,7 +332,8 @@
     "price": 475,
     "category": "C.White",
     "stock": 11,
-    "image": "../src/img/350-V2-Cream-White.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Cream-White.webp?alt=media&token=6cb9cab1-2e81-4746-be44-e5e90ef04574",
+    "url": "../src/img/350-V2-Cream-White.webp"
   },
   {
     "code": 29,
@@ -316,7 +344,8 @@
     "price": 630,
     "category": "Zebra",
     "stock": 21,
-    "image": "../src/img/350-V2-Zebra.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Zebra.webp?alt=media&token=d4d20b4f-be46-4429-bc3c-a6a19b76d604",
+    "url": "../src/img/350-V2-Zebra.webp"
   },
   {
     "code": 30,
@@ -327,7 +356,8 @@
     "price": 870,
     "category": "Beluga",
     "stock": 15,
-    "image": "../src/img/350-Low-V2-Beluga.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-Low-V2-Beluga.webp?alt=media&token=240099ca-54b2-4df7-89ac-25dc8ee66cce",
+    "url": "../src/img/350-Low-V2-Beluga.webp"
   },
   {
     "code": 31,
@@ -338,7 +368,8 @@
     "price": 708,
     "category": "B.Cooper",
     "stock": 69,
-    "image": "../src/img/350-V2-Core-Black-Copper.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-Copper.webp?alt=media&token=28b44a31-fd84-41e7-860b-642ab26207bd",
+    "url": "../src/img/350-V2-Core-Black-Copper.webp"
   },
   {
     "code": 32,
@@ -349,7 +380,8 @@
     "price": 1162,
     "category": "B.Red",
     "stock": 33,
-    "image": "../src/img/350-V2-Core-Black-Red.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-Red.webp?alt=media&token=b7a9aa2d-da0e-4f4f-8151-22f47d5dc68a",
+    "url": "../src/img/350-V2-Core-Black-Red.webp"
   },
   {
     "code": 33,
@@ -360,7 +392,8 @@
     "price": 815,
     "category": "B.Red",
     "stock": 13,
-    "image": "../src/img/350-V2-Core-Black-Red-2017.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-Red-2017.webp?alt=media&token=a200f6f5-1a0d-4a87-8e8b-971f522d82e3",
+    "url": "../src/img/350-V2-Core-Black-Red-2017.webp"
   },
   {
     "code": 34,
@@ -371,7 +404,8 @@
     "price": 799,
     "category": "B.Red",
     "stock": 60,
-    "image": "../src/img/350-V2-Core-Black-Red-2017.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-Red-2017.webp?alt=media&token=a200f6f5-1a0d-4a87-8e8b-971f522d82e3",
+    "url": "../src/img/350-V2-Core-Black-Red-2017.webp"
   },
   {
     "code": 35,
@@ -382,7 +416,8 @@
     "price": 775,
     "category": "B.White",
     "stock": 97,
-    "image": "../src/img/350-V2-Core-Black-White.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-White.webp?alt=media&token=1be299ce-79de-411a-85e4-ccdcb063789d",
+    "url": "../src/img/350-V2-Core-Black-White.webp"
   },
   {
     "code": 36,
@@ -393,7 +428,8 @@
     "price": 700,
     "category": "B.White",
     "stock": 80,
-    "image": "../src/img/350-V2-Core-Black-White.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-White.webp?alt=media&token=1be299ce-79de-411a-85e4-ccdcb063789d",
+    "url": "../src/img/350-V2-Core-Black-White.webp"
   },
   {
     "code": 37,
@@ -404,6 +440,7 @@
     "price": 790,
     "category": "B.Green",
     "stock": 15,
-    "image": "../src/img/350-V2-Core-Black-Green.webp"
+    "image": "https://firebasestorage.googleapis.com/v0/b/coderreact-7b81f.appspot.com/o/350-V2-Core-Black-Green.webp?alt=media&token=82168cbf-7944-4d08-829b-5c884e1e2273",
+    "url": "../src/img/350-V2-Core-Black-Green.webp"
   }
  ]
