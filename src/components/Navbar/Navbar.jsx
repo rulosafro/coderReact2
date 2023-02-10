@@ -12,11 +12,12 @@ export const Navbar = () => {
             <div className='flex flex-wrap justify-center lg:justify-between my-2'>
                 <Link to="/" className='text-ramaBlack text-4xl font-extrabold lg:basis-9/10 px-4'>YeezyMarketX</Link>
                 <nav className=' text-center px-6 lg:basis-1/10'>
-                    <Link to="/what">What</Link>
+                    {/* <Link to="/what">What</Link>
                     <Link to="/we">We</Link>
-                    <Link to="/do">Do</Link>
-                    <span>|</span>
-                    <Link to="/idealab">IdeaLab</Link>
+                    <Link to="/do">Do</Link> */}
+                    <Link to="/">Market</Link>
+                    {/* <span>|</span>
+                    <Link to="/idealab">IdeaLab</Link> */}
                     <span>|</span>
                     <Link to="/Formulario">Form</Link>
                     <span>|</span>
