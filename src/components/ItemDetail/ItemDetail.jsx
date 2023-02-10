@@ -25,33 +25,34 @@ const ItemDetail = ({id, name, stock, category, image, description, price, size 
 
 
   return (
-    <div>
-      <img src={image} alt={name}className="py-4" />
-      <h2 className="">{name}</h2>
-      <br />
-      <small>{category}</small>
-      <p> {size}</p>
-      <br />
-      <p>Precio: ${price}</p>
-      <br />
- 
-      {
-        !isInCart(id)
-        ? <ItemCount 
+    <div className="">
+      <div className="flex flex-wrap">
+        <img src={image} alt={name}className="py-4 object-contain lg:h-[600px] w-auto lg:place-self-start" />
+        <div className="flex flex-col gap-3 p-4 lg:p-8">
+          <h2 className="text-5xl text-primary font-black -mt-4">{name}</h2>
+          <p className="text-lg "> Categoria: {category}</p>
+          <p className="text-lg ">Talla: US{size}</p>
+          <p className="text-lg ">Precio: ${price} USD</p>
+        </div>
+      </div>
+      <div>
+        {
+          !isInCart(id)
+          ? <ItemCount 
           cantidad={cantidad}
           setCantidad={setCantidad}
           onAdd={handleAgregar}
           max={stock}
           /> 
-        : <>
-        <Link to='/' className="ramButton bg-blue-600 text-black font-bold">Seguir comprando</Link>
-        <Link to='/cart' className="ramButton bg-primary text-black font-bold">Terminar mi compra</Link>
-        </>
-      }
-      <br />
+          : <>
+          <Link to='/market' className="ramButton bg-blue-600 text-black font-bold">Seguir comprando</Link>
+          <Link to='/cart' className="ramButton bg-primary text-black font-bold">Terminar mi compra</Link>
+          </>
+        }
+        <br/>
+        <button onClick={handleVolver} className="ramButton ml-2 mt-4 text-black font-bold bg-gray-700">Volver</button>
 
-      <button onClick={handleVolver}>Volver</button>
-
+      </div>
     </div>
   )
 }

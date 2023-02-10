@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import './Login.sass'
 import { LoginContext, useLoginContext } from '../context/LoginContext'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export const Login = () => {
   const { login, user, loading, googleLogin } = useLoginContext()
+  const navigate = useNavigate()
 
   const [values, setValues] = useState({
     email: '',
@@ -21,6 +22,7 @@ export const Login = () => {
    const handleSubmit = (e) => { 
         e.preventDefault()
         login(values)
+        navigate('/')
     }
     
   return (
@@ -42,8 +44,8 @@ export const Login = () => {
               {user.error && <p className='text-red-500'> {user.error}</p>}
               <button className='text-ramaBlack bg-primary rounded-full p-2 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300'>Ingresar</button>
               </form>
-            <button className='my-4 bg-violet-500 rounded-full p-2 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300' onClick={googleLogin}>Google Login</button>
-            <Link to="/register" className='flex' >Registrarme</Link>
+            <button className='my-4 bg-violet-500 rounded-full p-2 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 font-bold' onClick={googleLogin}>Google Login</button>
+            <Link to="/register" className='flex ramButton w-[120px]' >Registrarme</Link>
           </>
         }
 

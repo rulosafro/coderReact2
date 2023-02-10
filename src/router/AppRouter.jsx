@@ -14,6 +14,7 @@ import { Login } from '../components/Login/Login'
 import { RegisterScreen } from '../components/RegisterScreen/RegisterScreen'
 import { useLoginContext } from '../components/context/LoginContext.jsx'
 import { Checkout } from '../components/Checkout/Checkout.jsx'
+import { Home } from '../components/Home/Home.jsx'
 
 export const AppRouter = () => {
 
@@ -23,7 +24,8 @@ export const AppRouter = () => {
     <BrowserRouter>
       <Navbar/>
         <Routes>
-          <Route path='/' element={<ItemListContainer/>}/>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/market' element={<ItemListContainer/>}/>
           <Route path='/what' element={<Mision/>}/>
           <Route path='/we' element={<Nosotros/>}/>
           <Route path='/do' element={<Portfolio/>}/>

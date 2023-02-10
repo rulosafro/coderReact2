@@ -15,11 +15,11 @@ export const Navbar = () => {
                     {/* <Link to="/what">What</Link>
                     <Link to="/we">We</Link>
                     <Link to="/do">Do</Link> */}
-                    <Link to="/">Market</Link>
+                    <Link to="/market">Market</Link>
                     {/* <span>|</span>
                     <Link to="/idealab">IdeaLab</Link> */}
                     <span>|</span>
-                    <Link to="/Formulario">Form</Link>
+                    <Link to="/Formulario">Contacto</Link>
                     <span>|</span>
                     <CartWidget2/>
 
