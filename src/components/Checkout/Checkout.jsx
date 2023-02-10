@@ -84,11 +84,11 @@ export const Checkout = () => {
 
     if (orderId) {
         return (
-            <div>
-                <h2>Tu compra ha sido exitosa</h2>
-                <p>El código de tu orden es: {orderId}</p>
+            <div className='container w-md mx-auto my-10 flex flex-col gap-3'>
+                <h2 className='text-6xl font-bold text-primary'>Tu compra ha sido exitosa</h2>
+                <p className='ml-10'><span className='font-bold'> El código de tu orden es:</span> {orderId}</p>
 
-                <Link to='/'>Volver</Link>
+                <Link className='ramButton w-[30%] self-start ml-10' to='/'>Volver a la tienda</Link>
             </div>
         )
     }
@@ -98,11 +98,11 @@ export const Checkout = () => {
     }
 
     return (
-    <div>
-        <h2>Terminar mi compra</h2>
-        <hr />
+    <div className='container mx-auto my-10 bg-neutral-700 rounded-3xl'>
+        <h2 className='text-3xl font-bold bg-primary text-black p-3 rounded-3xl'>Terminar mi compra</h2>
 
-        <form action="" onSubmit={handleSubmit} className=' flex-row'>	
+        <form action="" onSubmit={handleSubmit} className='flex flex-col w-[80%] justify-center mx-auto mt-5'>	
+        <p className='p-2'> Este formulario es para terminar tu compra con los datos para la boleta/factura</p>
             <input 
                 className='m-2'
                 type="text"
@@ -127,7 +127,7 @@ export const Checkout = () => {
                 value={values.email}
                 placeholder='Email'
             />
-            <button className='bg-white m-4 text-black p-1 rounded-lg'>Enviar</button>
+            <button className='ramButton m-4 font-bold p-1 rounded-lg'>Terminar compra</button>
         </form>
     </div>
   )

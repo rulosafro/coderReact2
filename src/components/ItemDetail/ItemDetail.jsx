@@ -4,7 +4,7 @@ import { ItemCount } from "../ItemCount/ItemCount"
 import { useContext, useState } from "react"
 import { MyCartContext } from "../context/MyCartContext"
 
-const ItemDetail = ({id, name, stock, category, image, description, price }) => {
+const ItemDetail = ({id, name, stock, category, image, description, price, size }) => {
   const [cantidad, setCantidad] = useState(1)
   const [opcion, setOpcion] = useState()
   const navigate = useNavigate()
@@ -17,7 +17,7 @@ const ItemDetail = ({id, name, stock, category, image, description, price }) => 
 
   const handleAgregar = () => {
     const item = {
-      id, name, stock, category, image, description, price, cantidad, opcion
+      id, name, stock, category, image, description, price, cantidad, opcion, size
     }
 
     agregarAlCarrito(item)
@@ -29,10 +29,10 @@ const ItemDetail = ({id, name, stock, category, image, description, price }) => 
       <img src={image} alt={name}className="py-4" />
       <h2 className="">{name}</h2>
       <br />
-      <small>{category} - {id}</small>
-      <p> {description}</p>
+      <small>{category}</small>
+      <p> {size}</p>
       <br />
-      <p>Precio: {price}</p>
+      <p>Precio: ${price}</p>
       <br />
  
       {
@@ -43,7 +43,10 @@ const ItemDetail = ({id, name, stock, category, image, description, price }) => 
           onAdd={handleAgregar}
           max={stock}
           /> 
-        : <Link to='/cart' className="ramButton bg-primary text-black font-bold">Terminar mi compra</Link>
+        : <>
+        <Link to='/' className="ramButton bg-blue-600 text-black font-bold">Seguir comprando</Link>
+        <Link to='/cart' className="ramButton bg-primary text-black font-bold">Terminar mi compra</Link>
+        </>
       }
       <br />
 
